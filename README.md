@@ -111,6 +111,8 @@ Checklist ✅
 - [ ] Add to Docker
 - [ ] Create all necessary controllers + services + repositorys
 - [ ] Write unit tests using JUnit + Mockito
+- [ ] Add swagger as api documentation
+- [ ] Add authorizer with JWT
 
 
  
