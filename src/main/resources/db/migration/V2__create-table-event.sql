@@ -4,5 +4,5 @@ CREATE TABLE event (
     description VARCHAR(255),
     date DATE NOT NULL,
     status SMALLINT NOT NULL,
-    address INTEGER REFERENCES address(address_id) ON DELETE CASCADE,
+    address UUID REFERENCES address(address_id) ON DELETE CASCADE
 );

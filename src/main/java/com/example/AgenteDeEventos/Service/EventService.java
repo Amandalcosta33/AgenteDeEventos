@@ -6,5 +6,4 @@ import com.example.AgenteDeEventos.Domain.Event.Event;
 public interface EventService {
 
     Event createNewEvent(EventRequestDTO entity) throws Exception;
-
 }
