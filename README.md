@@ -100,4 +100,18 @@ Here you can list the main routes of your API, and what are their expected reque
 ```json
 
 ```
+
+
+<h2 id="">Next Steps </h2>
+
+## Checklist
+
+- [x] Create the project
+- [x] Map the entities
+- [x] Run database migrations using Flyway
+- [ ] Add to Docker
+- [ ] Create all necessary controllers + services + repositorys
+- [ ] Write unit tests using JUnit + Mockito
+
+
  
