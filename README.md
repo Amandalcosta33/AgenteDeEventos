@@ -104,8 +104,7 @@ Here you can list the main routes of your API, and what are their expected reque
 
 <h2 id="">Next Steps </h2>
 
-## Checklist
-
+Checklist ✅
 - [x] Create the project
 - [x] Map the entities
 - [x] Run database migrations using Flyway
