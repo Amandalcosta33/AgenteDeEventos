@@ -16,7 +16,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "tickets")
+@Table(name = "event")
 @Entity
 @Getter
 @Setter
@@ -34,7 +34,7 @@ public class Event {
     private byte status;
 
     @OneToOne
-    @JoinColumn(name = "address_id")
+    @JoinColumn(name = "address")
     private Address address;
 
 }

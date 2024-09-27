@@ -1,8 +1,8 @@
-package com.example.AgenteDeEventos.Service.ServiceIml;
+/* package com.example.AgenteDeEventos.Service.ServiceIml;
 
 import com.example.AgenteDeEventos.Service.TicketService;
 
-public class TicketServiceIml implements TicketService {
+public class TicketServiceImpl implements TicketService {
 
     @Override
     public String createNewTicket(String entity) {
@@ -11,3 +11,4 @@ public class TicketServiceIml implements TicketService {
     }
 
 }
+ */
