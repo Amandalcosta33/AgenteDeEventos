@@ -83,6 +83,12 @@ $ docker build -t <conteiner'sname> .
 $ docker run -p 8080:8080 -t <conteiner'sname>
 ```
 ---
+---
+####  Você pode acessar a documentação pelo swagger
+```bash
+$ http://localhost:8080/swagger-ui/index.html#/
+```
+---
 
 <h2 id="nexts">Next Steps </h2>
 
@@ -94,7 +100,7 @@ Checklist ✅
 - [ ] Add kubernetes
 - [ ] Create all necessary controllers + services + repositorys
 - [ ] Write unit tests using JUnit + Mockito
-- [ ] Add swagger as Api documentation
+- [x] Add swagger as Api documentation
 - [ ] Add authorizer with JWT
 
 
