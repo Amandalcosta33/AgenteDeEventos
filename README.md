@@ -4,7 +4,7 @@
 <p align="center">
  <a href="#tech">Technologies</a> • 
  <a href="#started">Getting Started</a> • 
-  <a href="#routes">API Endpoints</a> •
+  <a href="#nexts">Next Steps</a> •
 </p>
 
 <p align="center">
@@ -66,52 +66,35 @@ spring.datasource.password=
 
 <h3>Starting</h3>
 
-How to start your project
-
+#### How to start your project
+---
 ```bash
+# Install maven dependencies
 mvn install
+# Run application
 mvn spring-boot:run
 ```
-
-<h2 id="routes">📍 API Endpoints</h2>
-
-Here you can list the main routes of your API, and what are their expected request bodies.
-​
-| route               | description                                          
-|----------------------|-----------------------------------------------------
-| <kbd>GET </kbd>     | 
-| <kbd>POST </kbd>     | a
-
-<h3 id="get-auth-detail">GET </h3>
-
-**RESPONSE**
-```json
-
+---
+#### Run with docker
+```bash
+# Build docker
+$ docker build -t <conteiner'sname> . 
+# Run no docker on port 8080
+$ docker run -p 8080:8080 -t <conteiner'sname>
 ```
+---
 
-<h3 id="post-auth-detail">POST </h3>
-
-**REQUEST**
-```json
-
-```
-
-**RESPONSE**
-```json
-
-```
-
-
-<h2 id="">Next Steps </h2>
+<h2 id="nexts">Next Steps </h2>
 
 Checklist ✅
 - [x] Create the project
 - [x] Map the entities
 - [x] Run database migrations using Flyway
-- [ ] Add to Docker
+- [x] Add to Docker
+- [ ] Add kubernetes
 - [ ] Create all necessary controllers + services + repositorys
 - [ ] Write unit tests using JUnit + Mockito
-- [ ] Add swagger as api documentation
+- [ ] Add swagger as Api documentation
 - [ ] Add authorizer with JWT
 
 
