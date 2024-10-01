@@ -22,7 +22,7 @@ public class SwaggerConfig {
                         .contact(new Contact()
                                 .name("Amanda Lopes Costa")
                                 .email("amanda.lcosta33@gmail.com")
-                                .url("https://www.linkedin.com/in/amandalopesct/")) // URL geralmente deve ser um link, ajuste conforme necessário
+                                .url("https://www.linkedin.com/in/amandalopesct/"))
                         .license(new License()
                                 .name("License of API")
                                 .url("API license URL")));
