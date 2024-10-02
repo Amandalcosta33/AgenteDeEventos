@@ -101,7 +101,7 @@ Checklist ✅
 - [ ] Create all necessary controllers + services + repositorys
 - [ ] Write unit tests using JUnit + Mockito
 - [x] Add swagger as Api documentation
-- [ ] Add authorizer with JWT
+- [x] Add authorizer with JWT
 
 
  
