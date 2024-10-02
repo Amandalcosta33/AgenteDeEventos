@@ -13,12 +13,13 @@ This project is a system for managing in-person events. It allows the sale of ti
 
 <h2 id="technologies">💻 Technologies</h2>
 
-- Sping ( Boot, Cloud, JPA, Web)
+- Sping ( Boot, Cloud, JPA, Web, Security)
 - Java
 - Postgress
 - Flyway
 - Amazon Web Services (Aws) - RDS/EC2
 - Docker
+- JWT authorization
 
 <h2 id="started">🚀 Getting started</h2>
 
