@@ -1,8 +1,9 @@
 package com.example.AgenteDeEventos.Domain.User;
 
 public enum UserRole {
-    ADMIN("admin"),
-    USER("user");
+    MOD("mod"), // Event Owner
+    ADMIN("admin"), // Application Owner
+    USER("user"); // QR Code Reader and Event Entry Confirming User
 
     private String role;
 
