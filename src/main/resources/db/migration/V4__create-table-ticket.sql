@@ -1,5 +1,5 @@
 CREATE TABLE ticket (
-    ticket_id SERIAL PRIMARY KEY,
+    ticket_id UUID PRIMARY KEY,
     qrcode_token VARCHAR(255) NOT NULL,
     cpf VARCHAR(14) NOT NULL,
     status SMALLINT NOT NULL,

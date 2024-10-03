@@ -1,4 +1,4 @@
-package com.example.AgenteDeEventos.Domain.Ticket;
+package com.example.AgenteDeEventos.Domain.EventTicket;
 
 import java.util.Date;
 import java.util.UUID;
@@ -16,25 +16,22 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "ticket")
+@Table(name = "event_tickets")
 @Entity
-@Setter
 @Getter
-@NoArgsConstructor
+@Setter
 @AllArgsConstructor
-public class Ticket {
+@NoArgsConstructor
+public class EventTicket {
 
     @Id
     @GeneratedValue
-    private UUID ticket_id;
-    private String qrcode_token;
-    private String cpf;
-    private Byte status;
+    private UUID event_tickets_id;
+    private int total_tickets;
     private Date date_created;
     private Date date_updated;
 
     @ManyToOne
     @JoinColumn(name = "event")
     private Event event;
-
 }

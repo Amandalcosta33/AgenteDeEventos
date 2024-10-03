@@ -12,9 +12,10 @@ public class EventRequestDTO {
     private String cep;
     private String complemento;
     private String address;
+    private int totalTickets;
 
     // Construtor
-    public EventRequestDTO(String title, String description, Date date, String city, String state, String cep, String complemento, String address) {
+    public EventRequestDTO(String title, String description, Date date, String city, String state, String cep, String complemento, String address, int totalTickets) {
         this.title = title;
         this.description = description;
         this.date = date;
@@ -23,6 +24,7 @@ public class EventRequestDTO {
         this.cep = cep;
         this.complemento = complemento;
         this.address = address;
+        this.totalTickets = totalTickets;
     }
 
     // Getters
@@ -58,6 +60,10 @@ public class EventRequestDTO {
         return address;
     }
 
+    public int getTotalTickets() {
+        return totalTickets;
+    }
+
     // Setters
     public void setTitle(String title) {
         this.title = title;
@@ -89,5 +95,9 @@ public class EventRequestDTO {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public void setTotalTickets(int totalTickets) {
+        this.totalTickets = totalTickets;
     }
 }
