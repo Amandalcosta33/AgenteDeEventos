@@ -9,7 +9,9 @@ import org.springframework.stereotype.Service;
 import com.example.AgenteDeEventos.DTO.Request.TicketRequestDTO;
 import com.example.AgenteDeEventos.Domain.Event.Event;
 import com.example.AgenteDeEventos.Domain.Ticket.Ticket;
+import com.example.AgenteDeEventos.Domain.TicketEmail.TicketEmail;
 import com.example.AgenteDeEventos.Repository.EventRepository;
+import com.example.AgenteDeEventos.Repository.TicketEmailRepository;
 import com.example.AgenteDeEventos.Repository.TicketRepository;
 import com.example.AgenteDeEventos.Service.QrCodeService;
 import com.example.AgenteDeEventos.Service.TicketService;
@@ -25,6 +27,9 @@ public class TicketServiceImpl implements TicketService {
 
     @Autowired
     private QrCodeService qrCodeService;
+
+    @Autowired
+    private TicketEmailRepository ticketEmailRepository;
 
     @Override
     public Ticket createNewTicket(TicketRequestDTO entity) throws Exception {
@@ -44,10 +49,19 @@ public class TicketServiceImpl implements TicketService {
             Ticket ticket = new Ticket();
             ticket.setCpf(entity.getCpf());
             ticket.setEvent(event);
+            ticket.setName(entity.getName());
             ticket.setStatus((byte) 0);
             ticket.setQrcode_token(qrCode);
 
             ticketRepository.save(ticket);
+
+            if (entity.getEmail() != null) {
+                TicketEmail ticketemail = new TicketEmail();
+                ticketemail.setEmail(entity.getEmail());
+                ticketemail.setEvent(event);
+
+                ticketEmailRepository.save(ticketemail);
+            }
 
             return ticket;
         } catch (Exception ex) {

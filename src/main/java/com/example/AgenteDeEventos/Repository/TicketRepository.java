@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.example.AgenteDeEventos.Domain.Event.Event;
 import com.example.AgenteDeEventos.Domain.Ticket.Ticket;
 
 public interface TicketRepository extends JpaRepository<Ticket, UUID> {
@@ -20,6 +19,5 @@ public interface TicketRepository extends JpaRepository<Ticket, UUID> {
 
     @Query("SELECT t FROM Ticket t WHERE t.cpf = :cpf AND t.event = :event")
     Ticket findByCpfAndEvent(@Param("cpf") String cpf, @Param("event") UUID event);
-
 
 }
